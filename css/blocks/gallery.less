@@ -1,0 +1,104 @@
+// main: ../style.less
+
+.gallery{
+  margin-bottom: 10rem;
+  @media @mobile-sm{
+    margin-bottom: 4rem;
+  }
+}
+
+
+.gallery__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+
+  margin-bottom: 4rem;
+
+  text-align: center;
+  @media @mobile-sm{
+    font-size: 24px;
+    margin-bottom: 2rem;
+  }
+}
+
+.gallery__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media @tablet{
+    justify-content: space-evenly;
+  }
+}
+
+.gallery_cards__item {
+  position: relative;
+  width: 30%;
+  margin-bottom: 2rem;
+
+  @media @tablet{
+    width:40%;
+  }
+  @media @mobile{
+    width:45%;
+  }
+  @media @mobile-sm{
+    width:100%;
+    margin: 0 0.9rem;
+  }
+}
+
+img.gallery__card__img {
+  @media @notebook{
+    max-width: 380px;
+  }
+  @media @mobile{
+    max-width: 346px;
+  }
+}
+
+.gallery__card__content {
+  position: absolute;
+  text-align: center;
+  width: 280px;
+  top: 16rem;
+  left: 4rem;
+  @media @mobile{
+    top: 9rem;
+    left: 2rem;
+  }
+
+}
+
+.gallery__card__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+  margin-bottom: 4rem;
+}
+
+
+
+.gallery__card__text {
+  display: none;
+  width: 100%;
+  
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  &.textSee{
+    display: block;
+  }
+}
+
+
+
+

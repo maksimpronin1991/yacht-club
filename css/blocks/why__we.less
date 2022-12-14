@@ -1,0 +1,79 @@
+// main: ../style.less
+
+.why__we {
+  margin-bottom: 9rem;
+  @media @mobile-sm {
+    margin-bottom: 3rem;
+  }
+}
+
+.why__we__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 4rem;
+  @media @mobile-sm {
+    margin-bottom: 3rem;
+    font-size: 24px;
+  }
+}
+
+.why__we__cards {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  @media @tablet{
+    flex-wrap:wrap;
+  }
+}
+
+.why__we__cards__item {
+  position: relative;
+  width: 33%;
+  margin: 2rem; 
+    @media @mobile-sm {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+.why__we__card__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 4rem;
+  @media @mobile-sm {
+    font-size: 17px;
+    margin-bottom: 3rem;
+  }
+}
+
+.why__we__card__img {
+  position: absolute;
+  top: 4rem;
+  left:20rem;
+  @media @mobile {
+    left: 10rem;
+  }
+  @media @mobile-sm {
+    left:16rem;
+    top: 1rem;
+  }
+}
+
+.why__we__card__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  @media @mobile-sm {
+    font-size: 16px;
+  }
+}

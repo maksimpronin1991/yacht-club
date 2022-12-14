@@ -1,0 +1,74 @@
+// main: ../style.less
+
+
+.about__us__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000; 
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @media @mobile-sm {
+    font-size: 24px;
+    margin-bottom: 2rem;
+  }
+}
+
+.about__us__content {
+  display: flex;
+  margin-bottom: 9rem;
+  @media @mobile-sm {
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+}
+
+.about__us__photo {
+ width: 50%;
+ background: url(/img/cole-freeman-ls4LVNbxHa0-unsplash\ 1.jpg) no-repeat center;
+ margin-right: 4rem;
+  @media @notebook{
+    margin-right: 2rem;
+  }
+  @media @mobile {
+    background: url(/img/cole-freeman-ls4LVNbxHa0-unsplash\ 1\ \(1\).jpg) no-repeat center;
+    background-size: cover;
+    width: 60%;
+  }
+  @media @mobile-sm {
+    display: none;
+  }
+  &--sm{
+    display: none;
+    @media @mobile-sm {
+      display: block;
+
+      background:url(/img/sm\ cole-freeman-ls4LVNbxHa0-unsplash\ 1\ sm.png) no-repeat center;
+      min-width: 343px;
+      min-height: 207px;
+    }
+  }
+
+}
+
+.about__us__content__text{
+  width: 50%;
+  margin: 0 2rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  @media @mobile-sm {
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    color: #000000;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,41 @@
+// main: ../style.less
+
+.header{
+  width:100%;
+  position: absolute;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid rgba(244, 219, 169, 0.71);;
+  @media @notebook{
+    margin: auto 1rem
+  }
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.nav__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #FFFFFF;
+
+  text-decoration: none;
+  margin-left: 40px;
+  &:hover{
+    text-decoration: underline;
+  }
+    @media @mobile{
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      color:white;
+  }
+}
